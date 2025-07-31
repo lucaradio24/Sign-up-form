@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    background-color: lightblue;
+    flex: 1;
+}
+
+.right {
+    background-color: lightgreen;
+    flex: 2;
+}
