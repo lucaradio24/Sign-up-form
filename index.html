@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -46,19 +45,24 @@
 
             <div class="row">
               <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" />
+                <label for="pw">Password</label>
+                <input type="password" id="pw" name="pw" />
               </div>
             </div>
 
             <div class="row">
               <div class="input-group">
-                <label for="password-confirm">Conferma Password</label>
+                <label for="pw-confirm">Conferma Password</label>
                 <input
                   type="password"
-                  id="password-confirm"
-                  name="password-confirm"
+                  id="pw-confirm"
+                  name="pw-confirm"
                 />
+
+                <div class="error-message"></div>
+
+
+                <div class="error-message"></div>
               </div>
             </div>
 
@@ -70,5 +74,8 @@
         </div>
       </div>
     </main>
+
+    <script src="index.js"></script>
+
   </body>
 </html>
