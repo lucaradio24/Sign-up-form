@@ -3,6 +3,30 @@
   padding: 0;
 }
 
+/* h1,h4 {
+  line-height: 1.4;
+} */
+
+h1 {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: clamp(18px, 3vw, 28px);
+  line-height: 1.8;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+h4 {
+  font-size: clamp(12px, 2.2vw, 16px);
+  max-width: 60ch;
+  opacity: 0.95;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 32ch;
+  letter-spacing: 0.04em;
+}
+
 a {
   text-decoration: underline #97bfde;
   color: #97bfde;
@@ -65,6 +89,17 @@ a:focus {
   color: #6f7794;
 }
 
+.copyright {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 8px;
+  color: rgba(224, 236, 245, 0.6);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.02em;
+}
+
 .right {
   flex: 1;
   background-color: rgba(33, 35, 43, 0.877);
@@ -73,7 +108,7 @@ a:focus {
   display: flex;
   flex-direction: column;
   padding: 24px 32px;
-  max-width: 460px
+  max-width: 460px;
 }
 
 .content-wrapper {
@@ -92,13 +127,11 @@ form {
   flex: 1;
 }
 
-
-
 .row {
   display: flex;
   align-items: center;
   padding-top: 1rem;
-  gap: 12px; 
+  gap: 12px;
   margin-bottom: 16px;
 }
 
@@ -112,8 +145,10 @@ form {
 
 .input-group label {
   color: #d1e2f0;
-  margin-bottom: 4px; line-height: 1.4;
-  font-size: 0.9rem; letter-spacing: .02em;
+  margin-bottom: 4px;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
 }
 
 .input-group input {
@@ -122,11 +157,9 @@ form {
   background-color: #253558;
   border: 2px solid #314e74;
   color: #fff;
-  height: 44px; padding: 10px 12px;
-   }
-
-
-
+  height: 44px;
+  padding: 10px 12px;
+}
 
 .submit {
   margin-top: 3rem;
@@ -157,6 +190,7 @@ input[type="submit"]:hover {
 
 .submit a {
   text-align: center;
+  line-height: 1.6;
 }
 
 .submit p {
@@ -191,6 +225,12 @@ input:focus {
   outline: 4px solid #314e74;
 }
 
+input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
 
-
-
+input::placeholder {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
