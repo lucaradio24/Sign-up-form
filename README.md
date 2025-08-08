@@ -2,7 +2,7 @@
 
 A modern sign-up form with a retro gaming aesthetic, featuring pixel-style design and an animated background.
 
-![Sign-up Form Preview](assets/preview.gif)
+[Sign-up Form Preview](Assets/preview.gif)
 
 ## ✨ Features
 
